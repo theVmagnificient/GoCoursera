@@ -1,5 +1,5 @@
 ```
-Example output 
+Example output using tmp.go
 
 ├───Go
     └───Coursera
