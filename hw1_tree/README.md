@@ -1,3 +1,4 @@
+```
 Example output 
 
 ├───Go
@@ -96,3 +97,4 @@ Example output
             └───person
                 ├───func.go
                 └───person.go
+```
