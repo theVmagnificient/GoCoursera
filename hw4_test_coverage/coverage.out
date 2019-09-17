@@ -1,0 +1,25 @@
+mode: set
+Coursera/hw4_test_coverage/client.go:63.80,67.19 2 1
+Coursera/hw4_test_coverage/client.go:70.2,70.20 1 1
+Coursera/hw4_test_coverage/client.go:73.2,73.20 1 1
+Coursera/hw4_test_coverage/client.go:78.2,90.16 10 1
+Coursera/hw4_test_coverage/client.go:96.2,99.25 3 1
+Coursera/hw4_test_coverage/client.go:116.2,118.16 3 1
+Coursera/hw4_test_coverage/client.go:122.2,123.28 2 1
+Coursera/hw4_test_coverage/client.go:130.2,130.21 1 1
+Coursera/hw4_test_coverage/client.go:67.19,69.3 1 1
+Coursera/hw4_test_coverage/client.go:70.20,72.3 1 1
+Coursera/hw4_test_coverage/client.go:73.20,75.3 1 1
+Coursera/hw4_test_coverage/client.go:90.16,91.54 1 1
+Coursera/hw4_test_coverage/client.go:94.3,94.50 1 1
+Coursera/hw4_test_coverage/client.go:91.54,93.4 1 1
+Coursera/hw4_test_coverage/client.go:100.31,101.44 1 1
+Coursera/hw4_test_coverage/client.go:102.38,103.53 1 1
+Coursera/hw4_test_coverage/client.go:104.29,107.17 3 1
+Coursera/hw4_test_coverage/client.go:110.3,110.44 1 1
+Coursera/hw4_test_coverage/client.go:113.3,113.73 1 1
+Coursera/hw4_test_coverage/client.go:107.17,109.4 1 1
+Coursera/hw4_test_coverage/client.go:110.44,112.4 1 1
+Coursera/hw4_test_coverage/client.go:118.16,120.3 1 1
+Coursera/hw4_test_coverage/client.go:123.28,126.3 2 1
+Coursera/hw4_test_coverage/client.go:126.8,128.3 1 1
