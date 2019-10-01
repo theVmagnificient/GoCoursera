@@ -34,3 +34,20 @@
 На всякий случай они есть в папке vendor.
 
 Для генерации кода из proto-спеки вам потребуется protoc 3-й версии (во многих стандартных репозиториях 2-я версия, она не подойдет)
+
+
+```
+=== RUN   TestServerStartStop
+--- PASS: TestServerStartStop (0.04s)
+=== RUN   TestServerLeak
+--- PASS: TestServerLeak (1.11s)
+=== RUN   TestACLParseError
+--- PASS: TestACLParseError (0.00s)
+=== RUN   TestACL
+--- PASS: TestACL (0.04s)
+=== RUN   TestLogging
+--- PASS: TestLogging (0.04s)
+=== RUN   TestStat
+--- PASS: TestStat (4.26s)
+PASS
+```
