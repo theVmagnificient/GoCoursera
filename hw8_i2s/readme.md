@@ -20,3 +20,170 @@ i2s - interface to struct. Функция, которая заполняет з�
 * json распаковывает int во float. Это указано в документации, не бага. В данном случае будет корректно приводить к инту, если нам встретился флоат
 * Проверяйте всегда что вам приходит на вход. И смотрите, что вы передаёте в функцию (да, рекурсия тут себя хорошо показывает) не reflect.Value, а именно оригинальные данные, до который вы доковырялись через нужные методы рефлекта
 * Если вы в функции используете какие-то имена структур, которые встречаются в стесте - это не правильно
+
+```
+=== RUN   TestSimple
+struct
+Username
+string
+Active
+bool
+ID
+int
+--- PASS: TestSimple (0.00s)
+=== RUN   TestComplex
+struct
+SubSimple
+struct
+true
+struct
+Active
+bool
+ID
+int
+Username
+string
+AAAA
+ManySimple
+slice
+true
+slice
+slice
+main.Simple
+*reflect.rtype
+true
+struct
+ID
+int
+Username
+string
+Active
+bool
+55
+&{42 rvasily true}
+<main.Simple Value>
+1
+slice
+main.Simple
+*reflect.rtype
+true
+struct
+ID
+int
+Username
+string
+Active
+bool
+55
+&{42 rvasily true}
+<main.Simple Value>
+2
+AAAA
+Blocks
+slice
+true
+slice
+slice
+main.IDBlock
+*reflect.rtype
+true
+struct
+ID
+int
+55
+&{42}
+<main.IDBlock Value>
+1
+slice
+main.IDBlock
+*reflect.rtype
+true
+struct
+ID
+int
+55
+&{42}
+<main.IDBlock Value>
+2
+AAAA
+--- PASS: TestComplex (0.00s)
+=== RUN   TestSlice
+slice
+slice
+main.Simple
+*reflect.rtype
+true
+struct
+Username
+string
+Active
+bool
+ID
+int
+55
+&{42 rvasily true}
+<main.Simple Value>
+1
+slice
+main.Simple
+*reflect.rtype
+true
+struct
+Active
+bool
+ID
+int
+Username
+string
+55
+&{42 rvasily true}
+<main.Simple Value>
+2
+--- PASS: TestSlice (0.00s)
+=== RUN   TestErrors
+struct
+ID
+int
+Username
+string
+Active
+bool
+struct
+Username
+string
+Active
+bool
+ID
+int
+struct
+Username
+string
+struct
+SubSimple
+struct
+true
+struct
+ID
+int
+Username
+string
+Active
+bool
+AAAA
+ManySimple
+slice
+true
+slice
+map
+struct
+SubSimple
+struct
+true
+struct
+bool
+struct
+slice
+struct
+--- PASS: TestErrors (0.00s)
+PASS
+```
